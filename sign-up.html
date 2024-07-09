@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+            <link rel="stylesheet" href="sign-up.css" />
+            <title>Sign Up</title>
+            <script>
+                function myFunction(){
+                    var x = document.getElementById("pass");
+                    var y = document.getElementById("passes");
+                    if (x.type === "password"){
+                        x.type = "text";
+                    }
+                    else{
+                        x.type = "password";
+                    }
+                    if (y.type === "password"){
+                        y.type = "text";
+                    }
+                    else{
+                        y.type = "password";
+                    }
+
+
+  }
+            </script>
+        </head>
+        <div class="wrapper">
+            <div class="login_box">
+            <div class="login-header">
+              <span>Sign-Up</span>
+          </div>
+          <div class="input_box">
+            <input type="text" id="user" class="input-field" required>
+            <label for="user" class="label">Username</label>
+          </div>
+          <div class="input_box">
+            <input type="text" id="email-phone" class="input-field" required>
+            <label for="email-phone" class="label">Email or Phone</label>
+          </div>
+          <div class="input_box">
+            <input type="password" id="pass" class="input-field" required>
+            <label for="pass" class="label">Password</label>
+          </div>
+          <div class="input_box">
+            <input type="password" id="passes" class="input-field" required>
+            <label for="passes" class="label">Confirm Password</label>
+          </div>
+          <div class="show-password">
+            <input type="checkbox" onclick="myFunction()">Show Password
+          </div>
+          <div class="input_box">
+            <input type="submit" class="input-submit" value="Sign Up">
+          </div>
+          <div class="GO-BACK">
+            <a href="login.html"><input type="button" class="go-back" value="                                               Back                                              "></a>
+        </div>
+          </div>
+          </div>
+      </body>
+    </html>
+    </html>

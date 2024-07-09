@@ -1,0 +1,124 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="areastyle.css"/>
+  </head>
+  <body>
+    <form name="MarcellusForm">
+      <table>
+        <tr>
+            <font style="font-size: 36px"
+              >Area Calculator for basic Shapes</font
+            >
+            <h2><a href="Home.html"><input type="button" class="go-back" value="Home"></a></h2>
+          </td>
+        </tr>
+
+        <!-- IMAGES -->
+        <tr>
+          <!-- RECTANGLE -->
+          <td bgcolor="#0000ff" width="33%">
+            <p align="center">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Rectangle_%28plain%29.svg/400px-Rectangle_%28plain%29.svg.png"
+                width="125"
+              />
+            </p>
+          </td>
+          <!-- CIRCLE -->
+          <td bgcolor="#990033" width="33%">
+            <p align="center">
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/001/192/213/original/circle-png.png"
+                width="125"
+              />
+            </p>
+          </td>
+          <!-- TRIANGLE -->
+          <td bgcolor="#88cc00" width="33%">
+            <p align="center">
+              <img
+                src="https://cdn.glitch.global/80b4fe48-256c-4001-aa45-c4952fb78e7d/triangle-png-42412.png?v=1718739843122"
+                width="125"
+              />
+            </p>
+          </td>
+        </tr>
+
+        <!-- INPUT INFORMATION -->
+        <tr>
+          <!-- RECTANGLE -->
+          <td bgcolor="#0000ff" align="center">
+            Enter width:<br />
+            <input type="text" name="txRectWidth" id="rectW"/><br />
+            Enter height:<br />
+            <input type="text" name="txRectHeight" id="rectH"/><br />
+            <p align="center">
+              <input  
+                id="myBtn4"
+                type="button"
+                name="btRecArea"
+                value="Calc Area"
+                onclick="Rectangle()"
+              />
+            </p>
+          </td>
+          <!-- CIRCLE -->
+          <td bgcolor="#990033">
+            Enter Radius:<br />
+            <input type="text" name="txCircRadius" id="circW"/><br />
+            <p align="center">OR</p>
+            Enter Diameter:<br />
+            <input type="text" name="txCircDiameter" id="circD"/><br />
+            <p align="center">
+              <input
+              id="myBtn2"
+                type="button"
+                name="btCirArea"
+                value="Calc Area"
+                onclick="Circle()"
+              />
+            </p>
+          </td>
+
+          <!-- TRIANGLE -->
+          <td bgcolor="#88cc00">
+            Enter base:<br />
+            <input type="text" name="txTriangleBase" id="triB"/><br />
+            Enter height:<br />
+            <input type="text" name="txTraingleHeight" id="triH"/><br />
+            <p align="center">
+              <input
+                id="myBtn3"
+                type="button"
+                name="btTArea"
+                value="Calc Area"
+                onclick="Triangle()"
+              />
+            </p>
+          </td>
+        </tr>
+
+        <!-- ANSWER -->
+        <tr>
+          <!-- RECTANGLE -->
+          <td bgcolor="#0000ff">
+            Answer:<br />
+            <input type="text" name="txRectArea" id="text-box"disabled />
+          </td>
+          <!-- CIRCLE -->
+          <td bgcolor="#990033">
+            Answer:<br />
+            <input type="text" name="txCircleArea" id="text-box"disabled />
+          </td>
+          <!-- TRIANGLE -->
+          <td bgcolor="#88cc00" class="tri">
+            Answer:<br />
+            <input type="text" name="txTriArea" id="text-box"disabled />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <script src="area.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, intitial-scale=1.0">
+            <link rel="stylesheet" href="cswstyle.css" />
+        </head>
+        <body>
+        <div class="wrapper">
+            <div class="login_box">
+            <div class="login-header">
+              <span>Criteria:</span>
+          </div>
+          <form name="fmDashboard">
+          <div class="input_box">
+            <input type="text" id="fname" class="input-field" required>
+            <label for="fname" class="label">First Name</label>
+          </div>
+          <div class="input_box">
+            <input type="text" id="lname" class="input-field" required>
+            <label for="lname" class="label">Last Name</label>
+          </div>
+          <div class="input_box">
+            <select class="input-field" name="slSize">
+              <option value="1000">Miniture (<1000)</option>
+              <option value="2000">Small (<2000)</option>
+              <option value="4000">Medium (<4000)</option>
+              <option value="6000">Bigger Medium (<6000)</option>
+              <option value="15000">Large (<15000)</option>
+              <option value="70000">Extra Large (15001+)</option>
+
+            </select>
+          </div>
+
+          <div class="input_box">
+            <select class="input-field" name="slRegion" required>
+              <option value="west">West</option>
+              <option value="east">East</option>
+              <option value="north">North</option>
+              <option value="south">South</option>
+              <option value="all">All</option>
+            </select>
+          </div>
+          <div class="input_box">
+            <input type="text" id="g.p.a" class="input-field" name="txGPA" required>
+            <label for="g.p.a" class="label">GPA</label>
+          </div>
+          <div class="input_box">
+            <input type="button" id="myBtn" class="input-button" value="Search" onclick="Search()">
+          </div>
+          <div class="GO-BACK">
+            <a href="Home.html"><input type="button" class="go-back" value="Home"></a>
+        </div>
+          </div>
+          </div>
+          <div id="personal-info">
+
+          </div>
+          <div id="output">
+
+          </div>
+          <script src="script.js"></script>
+      </body>
+    </html>
